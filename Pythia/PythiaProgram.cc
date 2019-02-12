@@ -39,7 +39,6 @@ delete hepmcevt;
 // End of event loop. Statistics. Histogram.
 }
 pythia.stat();
-cout << mult;
  
 // Done.
 return 0;
