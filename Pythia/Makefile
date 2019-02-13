@@ -193,7 +193,7 @@ endif
 
 
 # User-written examples for tutorials, without external dependencies.
-mymain : mymain.cc $(PREFIX_LIB)/libpythia8.a
+HadronizationfromLHE : HadronizationfromLHE.cc $(PREFIX_LIB)/libpythia8.a
 ifeq ($(HEPMC2_USE),true)
 	$(CXX) $< -o $@ -I$(HEPMC2_INCLUDE) $(CXX_COMMON)\
 	-L$(HEPMC2_LIB) -Wl,-rpath,$(HEPMC2_LIB) -lHepMC\
@@ -213,7 +213,7 @@ clean:
 	@rm -f main[0-9][0-9]; rm -f out[0-9][0-9];\
 	rm -f main[0-9][0-9][0-9]; rm -f out[0-9][0-9][0-9];\
 	rm -f mymain[0-9][0-9]; rm -f myout[0-9][0-9];\
-        rm  -f mymain;\
+        rm  -f HadronizationfromLHE;\
 	rm -f test[0-9][0-9][0-9]; rm -f *.dat;\
 	rm -f weakbosons.lhe; rm -f Pythia8.promc; rm -f hist.root;\
 	rm -f *~; rm -f \#*; rm -f core*; rm -f *Dct.*; rm -f *.so;
