@@ -3,22 +3,30 @@
 ! Number of events generated
 Main:numberOfEvents        = 1000
   
-// Shower options
+
+! Shower options
 HadronLevel:all            = on
 PartonLevel:MPI            = on
-  
-! Core process for merging
-Merging:Process            = pp> u d~ u~ d
+ 
 
+! Jet Matching
+JetMatching:qCut         = 0.0
+JetMatching:doShowerKt   = off
+JetMatching:nJetMax      = 2 
+
+
+! Core process for merging
+Merging:Process            = pp>ud~u~d
+
+!Merging
+Merging:doKTMerging = on
 ! Maximal number of additional jets.
 Merging:nJetMax            = 2
   
 ! Jet-separation merging
-Merging:doKTMerging        = off
-Merging:doMGMerging        = off
-Merging:doUserMerging      = off
-Merging:doPTLundMerging    = on
 ! Merging scale value.
-Merging:TMS                = 15
+Merging:TMS                = 20
   
-PDF:pSet                 = LHAPDF6:NNPDF23_lo_as_0130_qed
+!PDF:pSet                 = LHAPDF5:cteq6ll.LHpdf
+!PDF:pSet                 = LHAPDF6:NNPDF23_lo_as_0130_qed
+
