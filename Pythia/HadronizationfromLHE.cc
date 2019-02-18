@@ -1,6 +1,6 @@
 
 // to run
-// ./HadronizationfromLHE HadronizationfromLHE.cmnd HadronizationfromLHEout.hepmc > out
+// ./mymain mymain.cmnd mymainout.hepmc > out
 
 #include "Pythia8/Pythia.h"
 #include "Pythia8Plugins/HepMC2.h"
@@ -49,6 +49,7 @@ pythia.readFile(argv[1]);
 // Read from an LHE file
 pythia.readString("Beams:frameType = 4");
 pythia.readString("Beams:LHEF = ejemplo_hadronizar.lhe");
+
 
 
 // Extract settings to be used in the main program.

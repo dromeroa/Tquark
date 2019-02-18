@@ -26,7 +26,9 @@ Merging:nJetMax            = 2
 ! Jet-separation merging
 ! Merging scale value.
 Merging:TMS                = 20
-  
-!PDF:pSet                 = LHAPDF5:cteq6ll.LHpdf
-!PDF:pSet                 = LHAPDF6:NNPDF23_lo_as_0130_qed
 
+! The PDF  
+PDF:pSet                 = LHAPDF6:NNPDF23_lo_as_0130_qed
+
+! The tune CUETP8M1
+Tune:pp = 14

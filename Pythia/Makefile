@@ -213,7 +213,7 @@ clean:
 	@rm -f main[0-9][0-9]; rm -f out[0-9][0-9];\
 	rm -f main[0-9][0-9][0-9]; rm -f out[0-9][0-9][0-9];\
 	rm -f mymain[0-9][0-9]; rm -f myout[0-9][0-9];\
-        rm  -f HadronizationfromLHE;\
+        rm  -f mymain;\
 	rm -f test[0-9][0-9][0-9]; rm -f *.dat;\
 	rm -f weakbosons.lhe; rm -f Pythia8.promc; rm -f hist.root;\
 	rm -f *~; rm -f \#*; rm -f core*; rm -f *Dct.*; rm -f *.so;
