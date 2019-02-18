@@ -1,6 +1,6 @@
 
 // to run
-// ./mymain mymain.cmnd mymainout.hepmc > out
+// ./HadronizationfromLHE HadronizationfromLHE.cmnd HadronizationfromLHEout.hepmc > out
 
 #include "Pythia8/Pythia.h"
 #include "Pythia8Plugins/HepMC2.h"
